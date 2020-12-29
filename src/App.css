@@ -2,9 +2,13 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-logo {  
+  pointer-events: none;  
+}
+
+.igIcon {
+  height: 48px; 
+  padding-right: 5px; 
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +18,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fcfcfc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(40, 42, 143);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #c2932f;
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
