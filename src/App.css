@@ -3,7 +3,8 @@
 }
 
 .App-logo {  
-  pointer-events: none;  
+  pointer-events: none;
+  padding: 0;  
 }
 
 .igIcon {
