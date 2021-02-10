@@ -5,7 +5,7 @@ function App() {
 		<div className="App">
 			<header className="App-header">
 				<img src="/images/dwalesska_smalllogo.jpg" className="App-logo" alt="logo" />
-				<p>👋 Site currently under construction.</p>
+				<p id="logoCaption">👋 Site currently under construction.</p>
 				<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 					<div>
 						<img src="/images/ig_icon.svg" className="igIcon" alt="instagram" />
