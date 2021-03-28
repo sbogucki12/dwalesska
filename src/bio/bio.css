@@ -1,0 +1,28 @@
+
+
+#bioContentContainer {
+	animation: slide-in 2s forwards;
+	-webkit-animation: slide-in 2s forwards;
+	overflow: hidden;
+    margin-left: 40vw;
+    margin-top: -10%;
+}
+
+@keyframes slide-in {
+	0% {
+		transform: translateX(100vw);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slide-in {
+	0% {
+		-webkit-transform: translateX(100vw);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+

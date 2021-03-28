@@ -1,3 +1,19 @@
+# DWalesska.com
+
+[Dwalesska.com](https://icy-mud-0b507341e.azurestaticapps.net/)
+
+*Developing a coaching site for a client*
+
+
+## March 27, 2021
+
+<p>Initial styling:</p>
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/landing0GIF.gif" />
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
