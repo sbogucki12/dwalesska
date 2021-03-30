@@ -1,11 +1,26 @@
-
+#bioContainer {
+	
+	height: 100%;
+	width: 100%; 
+}
 
 #bioContentContainer {
-	animation: slide-in 2s forwards;
-	-webkit-animation: slide-in 2s forwards;
+	background: linear-gradient(90deg, #77639159, #ffffff 50%);
+	border-top-left-radius: 20%;
+	border-bottom-left-radius: 20%;
 	overflow: hidden;
-    margin-left: 40vw;
-    margin-top: -10%;
+	height: 100vh;	
+	width: 100vw;	
+	margin-left: 2%; 
+}
+
+#bioContentCard {
+	animation: slide-in 2.5s forwards;
+	-webkit-animation: slide-in 2.5s forwards;
+	position: absolute;
+	left: 35vw;
+	top: 10vh;
+	
 }
 
 @keyframes slide-in {
@@ -25,4 +40,17 @@
 		-webkit-transform: translateX(0%);
 	}
 }
+
+#mainDaniaBackgroundImage {	
+	opacity: 0.3;
+	position: absolute;
+	left: 0;
+	top: 0;		
+	border-top-left-radius: 25%;		
+	animation: slide-in 1s forwards;
+	-webkit-animation: slide-in 1s forwards;	
+}
+
+
+
 

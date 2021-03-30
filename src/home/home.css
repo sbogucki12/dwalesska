@@ -14,9 +14,8 @@
 	justify-content: flex-start;
 	align-items: center;
 	position: relative;
-	height: 80vh;    
-    background: linear-gradient(90deg, rgba(255, 0, 0, 0), rgba(237, 250, 253, 0.8), rgba(255, 0, 0, 0) 88%);
-    overflow: hidden;
+	height: 80vh;  
+    overflow: hidden;    
 }
 
 .slideAnimation {
@@ -34,18 +33,13 @@
     100% { -webkit-transform: translateX(-100%); }
 }
 
-
-
 #mainBackgroundImage {
-	opacity: 0.3;
+	opacity: .3;
 	position: absolute;
 	right: 0;
 	top: 0;
 	margin-right: 5vw;
-	margin-top: 5vh;
-	background: linear-gradient(90deg, rgba(237, 250, 253, 0.8), rgba(255, 0, 0, 0) 70.71%),
-		linear-gradient(127deg, rgba(253, 253, 253, 0.568), rgba(0, 255, 0, 0) 70.71%),
-		linear-gradient(336deg, rgba(108, 192, 248, 0.8), rgba(0, 0, 255, 0) 70.71%);
+	margin-top: 5vh;    
 	border-top-right-radius: 10%;
 	border-bottom-right-radius: 25%;
 	height: 100%;

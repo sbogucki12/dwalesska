@@ -1,5 +1,5 @@
 import './home.css';
-import PlaceholderImage from './ProfilePlaceholderSuit.png';
+import MainLogoImage from './Studio Beach Logo with Waves Icon.svg';
 import { useState } from 'react';
 import Bio from '../bio/Bio';
 import HomeContent from './HomeContent';
@@ -39,7 +39,7 @@ function Home() {
 				<header>Header</header>
 			</div>
 			<div id="mainContainer" >
-				<img id="mainBackgroundImage" src={PlaceholderImage} alt="DWalesska" title="DWalesska" />
+				<img id="mainBackgroundImage" src={MainLogoImage} alt="DWalesska" title="DWalesska" />
 				{view}
 			</div>
 			<div id="footer">

@@ -1,10 +1,11 @@
 import './landing.css';
+import Logo from '../home/Studio Beach Logo with Waves Icon.jpg';
 
 function Landing() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<img src="/images/dwalesska_smalllogo.jpg" className="App-logo" alt="logo" />
+				<img src={Logo} className="App-logo" alt="logo" />
 				<p id="logoCaption">👋 Site currently under construction.</p>
 				<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 					<div>
