@@ -3,6 +3,7 @@ import MainLogoImage from './Studio Beach Logo with Waves Icon.svg';
 import { useState } from 'react';
 import Bio from '../bio/Bio';
 import HomeContent from './HomeContent';
+import Footer from '../footer/Footer';
 
 function Home() {
 	const [slideOut, setSlideOut] = useState(false);
@@ -43,7 +44,7 @@ function Home() {
 				{view}
 			</div>
 			<div id="footer">
-				<div>Footer</div>
+				<Footer />
 			</div>
 		</div>
 	);

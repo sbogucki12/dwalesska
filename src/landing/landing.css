@@ -31,7 +31,7 @@
   }
   
   .App-link {
-    color: #c2932f;
+    color: var(--secondary-color);
     text-decoration: none;
   }
   
@@ -47,4 +47,5 @@
   #logoCaption {
     z-index: 100;
     margin-top: 2%;
+    color: var(--primary-color)
   }

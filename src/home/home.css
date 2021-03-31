@@ -3,6 +3,7 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
+
 }
 
 #header {
@@ -14,8 +15,10 @@
 	justify-content: flex-start;
 	align-items: center;
 	position: relative;
-	height: 80vh;  
+	min-height: 80vh;  
     overflow: hidden;    
+    margin-top: 5px; 
+	margin-bottom: 5px;
 }
 
 .slideAnimation {
@@ -36,22 +39,23 @@
 #mainBackgroundImage {
 	opacity: .3;
 	position: absolute;
-	right: 0;
-	top: 0;
-	margin-right: 5vw;
-	margin-top: 5vh;    
+    top: auto;
+	right: 0;	
+	margin-right: 5vw;   
 	border-top-right-radius: 10%;
-	border-bottom-right-radius: 25%;
-	height: 100%;
+	border-bottom-right-radius: 25%;	
+    max-width: 40%; 
+    max-height: 90%;    
 }
 
-
 #footer { 
-    max-height: 5vh;
+    position: fixed;
+    bottom: 0;
+    left: 0; 
 }
 
 #homeContentContainer {
-    margin-left: 40vw;
+    margin-left: 30vw;
     margin-top: -10%;
     display: flex;
     flex-direction: column;
@@ -61,13 +65,13 @@
 }
 
 #homeContentCardBorder {
-    background: linear-gradient(270deg, rgb(208, 228, 250), rgb(255, 255, 255));
+    background: linear-gradient(270deg, var(--primary-color-darkest), rgb(255, 255, 255));
     background-size: 400% 400%;
     border-radius: 5%;
-    -webkit-animation: ContentBorderGradientAnimation 8s ease infinite;
-    -moz-animation: ContentBorderGradientAnimation 8s ease infinite;
-    -o-animation: ContentBorderGradientAnimation 8s ease infinite;
-    animation: ContentBorderGradientAnimation 8s ease infinite;
+    -webkit-animation: ContentBorderGradientAnimation 6s ease infinite;
+    -moz-animation: ContentBorderGradientAnimation 6s ease infinite;
+    -o-animation: ContentBorderGradientAnimation 6s ease infinite;
+    animation: ContentBorderGradientAnimation 6s ease infinite;
     display: flex;
     align-items: center;
     justify-content: center;
