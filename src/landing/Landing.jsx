@@ -1,5 +1,5 @@
 import './landing.css';
-import Logo from '../home/Studio Beach Logo with Waves Icon.jpg';
+import Logo from '../oldStyle/home/Studio Beach Logo with Waves Icon.jpg';
 
 function Landing() {
 	return (

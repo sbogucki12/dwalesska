@@ -1,114 +1,74 @@
-#homeContainer {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-
+#layoutContainer {
+    height: 100vh;
+    background-image: url("../assets/landingBG_0.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#header {
-    max-height: 5vh;
-}
-
-#mainContainer {	
+#headerContainer {
 	display: flex;
-	justify-content: flex-start;
 	align-items: center;
-	position: relative;
-	min-height: 80vh;  
-    overflow: hidden;    
-    margin-top: 5px; 
-	margin-bottom: 5px;
+	justify-content: space-between;
 }
 
-.slideAnimation {
-    animation: slide-out 2s forwards;
-    -webkit-animation: slide-out 2s forwards;
-}
-
-@keyframes slide-out {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
-}
-
-@-webkit-keyframes slide-out {
-    0% { -webkit-transform: translateX(0%); }
-    100% { -webkit-transform: translateX(-100%); }
-}
-
-#mainBackgroundImage {
-	opacity: .3;
-	position: absolute;
-    top: auto;
-	right: 0;	
-	margin-right: 5vw;   
-	border-top-right-radius: 10%;
-	border-bottom-right-radius: 25%;	
-    max-width: 40%; 
-    max-height: 90%;    
-}
-
-#footer { 
-    position: fixed;
-    bottom: 0;
-    left: 0; 
-}
-
-#homeContentContainer {
-    margin-left: 30vw;
-    margin-top: -10%;
+#headerLeftContainer {
+    background-color: var(--primary-color);
+    width: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 100;
 }
 
-#homeContentCardBorder {
-    background: linear-gradient(270deg, var(--primary-color-darkest), rgb(255, 255, 255));
-    background-size: 400% 400%;
-    border-radius: 5%;
-    -webkit-animation: ContentBorderGradientAnimation 6s ease infinite;
-    -moz-animation: ContentBorderGradientAnimation 6s ease infinite;
-    -o-animation: ContentBorderGradientAnimation 6s ease infinite;
-    animation: ContentBorderGradientAnimation 6s ease infinite;
+#headerMiddleContainer {
+    background-color: var(--secondary-color-light);
+    width: 60vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    padding: 3%;
-    border: 1px solid rgb(208, 228, 250); 
 }
 
-@-webkit-keyframes ContentBorderGradientAnimation {
-    0%{background-position:0% 50%}    
-    50%{background-position:100% 50%}    
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes ContentBorderGradientAnimation {
-    0%{background-position:0% 50%}    
-    50%{background-position:100% 50%}    
-    100%{background-position:0% 50%}
-}
-@-o-keyframes ContentBorderGradientAnimation {
-    0%{background-position:0% 50%}    
-    50%{background-position:100% 50%}    
-    100%{background-position:0% 50%}
-}
-@keyframes ContentBorderGradientAnimation {
-    0%{background-position:0% 50%}    
-    50%{background-position:100% 50%}    
-    100%{background-position:0% 50%}
-}
-
-#homeContentCardContainer {
-    background: white; 
-    border-radius: 5%; 
-    border: .5px solid rgb(208, 228, 250); 
-}
-
-#homeContentCardRow1 {
+#headerRightContainer {
+    background-color: var(--primary-color);
+    width: 20vw;
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bodyContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#bodyLeftContainer {
+    background-color: var(--primary-color);
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bodyMiddleContainer {
+    background-color: var(--secondary-color-light);
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bodyRightContainer {
+    background-color: var(--primary-color);
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
