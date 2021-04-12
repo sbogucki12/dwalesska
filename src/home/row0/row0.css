@@ -1,0 +1,10 @@
+#row0Container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.row0CardContainer {
+	border: 1px solid var(--primary-color);
+}

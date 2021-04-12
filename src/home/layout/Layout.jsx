@@ -1,13 +1,28 @@
-import '../home.css';
+import './layout.css';
 
-function Layout(props) {
+const Layout = (props) => {
 	return (
-		<div id='layoutContainer'>
-			<div>
+		<div>
+			<div id='layoutHeader'>
                 {props.header}
             </div>
-			<div>
-                {props.body}
+			<div id='layoutLanding'>
+                {props.landing}
+            </div>
+            <div>
+                {props.row0}
+            </div>
+            <div>
+                {props.row1}
+            </div>
+            <div>
+                {props.row2}
+            </div>
+            <div>
+                {props.row3}
+            </div>
+            <div>
+                {props.footer}
             </div>
 		</div>
 	);

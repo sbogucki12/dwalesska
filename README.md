@@ -5,10 +5,13 @@
 *Developing a coaching site for a client*
 
 
-## March 27, 2021
+## April 11, 2021
 
-<p>Initial styling:</p>
-<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/landing0GIF.gif" />
+<p>Initial layout:</p>
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/layout0GIF.gif" />
+
+
+
 
 
 
