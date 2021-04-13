@@ -1,0 +1,45 @@
+#contactContainer {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-color: var(--primary-color-lightest);
+	position: relative;
+}
+
+#contactTitle {
+	margin-left: 30vw;
+}
+
+#contactFormContainer {
+	width: 98vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.contactBtnContainer {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	width: 174px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#contactDialog {
+	position: absolute;
+	top: -10%;
+	left: 10vw;
+	z-index: 1000;
+	width: 80vw;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid var(--primary-color);
+	padding-bottom: 10px;
+	border-radius: 5%;
+}

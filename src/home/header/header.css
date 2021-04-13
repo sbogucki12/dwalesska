@@ -1,11 +1,10 @@
 #headerContainer {
-    border-bottom: 2px solid var(--primary-color);    
-    display: flex;
-    width: 100vw;   
-    background-color: white;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    padding-left: 1vh;
+	border-bottom: 2px solid var(--primary-color);
+	display: flex;
+	width: 100vw;
+	background-color: white;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
-

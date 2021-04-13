@@ -2,20 +2,17 @@
 
 [Dwalesska.com](https://icy-mud-0b507341e.azurestaticapps.net/)
 
-*Developing a coaching site for a client*
+_Developing a coaching site for a client_
 
+## April 12, 2021
+
+<p>Started custom contact form:</p>
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/contact0GIF.gif" />
 
 ## April 11, 2021
 
 <p>Initial layout:</p>
 <img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/layout0GIF.gif" />
-
-
-
-
-
-
-
 
 # Getting Started with Create React App
 
