@@ -5,7 +5,7 @@ function Landing() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<img src={Logo} className="App-logo" alt="logo" />
+				<img src={Logo} className="App-logo" alt="logo" title='logo'/>
 				<p id="logoCaption">👋 Site currently under construction.</p>
 				<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 					<div>
@@ -17,7 +17,7 @@ function Landing() {
 							className="App-link"
 							href="https://www.instagram.com/dwalesska_coaching/"
 							target="_blank"
-							rel="noopener noreferrer"
+							rel="noopener noreferrer"							
 						>
 							@dwalesska_coaching
 						</a>

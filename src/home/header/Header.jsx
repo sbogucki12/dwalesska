@@ -11,7 +11,7 @@ const Header = () => {
 				<h4>header</h4>
 			</div>
 			<div style={{ marginRight: '5vw' }}>
-				<HashLink to="/new#layoutFooter" style={{ textDecoration: 'none' }}>
+				<HashLink to="/new#layoutFooter" style={{ textDecoration: 'none' }} >
 					<div onMouseEnter={() => setIsEmailHover(true)} onMouseLeave={() => setIsEmailHover(false)}>
 						{isEmailHover ? (
 							<h6>Contact Dania!</h6>
