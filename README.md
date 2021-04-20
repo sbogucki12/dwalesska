@@ -6,7 +6,9 @@ _Developing a coaching site for a client_
 
 ## April 20, 2021
 
-To Do: Fix contact component so that state is passing from parent to child 
+<p>Wired up contact form with Redux</p>
+<p>Which is engineering overkill but I wanted to brush off the Redux skills</p>
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/contact1GIF.gif" />
 
 ## April 12, 2021
 

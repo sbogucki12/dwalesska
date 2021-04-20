@@ -4,12 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
+import contactReducer from './utils/reducers/contactReducer';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+const store = createStore(contactReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Router>
-			<App />
-		</Router>
+		<Provider store={store}>
+			<Router>
+				<App />
+			</Router>
+		</Provider>
 	</React.StrictMode>,
 	document.getElementById('root')
 );
