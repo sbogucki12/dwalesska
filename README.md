@@ -4,6 +4,10 @@
 
 _Developing a coaching site for a client_
 
+## April 20, 2021
+
+To Do: Fix contact component so that state is passing from parent to child 
+
 ## April 12, 2021
 
 <p>Started custom contact form:</p>
