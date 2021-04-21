@@ -4,11 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
-import contactReducer from './utils/reducers/contactReducer';
-import { createStore } from 'redux';
+import contactReducer from './utils/slices/contactSlice';
+import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 
-const store = createStore(contactReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = configureStore({
+	reducer: {
+		contact: contactReducer,
+	},
+});
 
 ReactDOM.render(
 	<React.StrictMode>
