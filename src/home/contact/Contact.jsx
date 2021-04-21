@@ -2,11 +2,7 @@ import './contact.css';
 import { Fragment, useState } from 'react';
 import ContactDialog from './ContactDialog';
 import { useDispatch } from 'react-redux';
-import fName from '../../utils/actions/fName';
-import lName from '../../utils/actions/lName';
-import email from '../../utils/actions/email';
-import subject from '../../utils/actions/subject';
-import message from '../../utils/actions/message';
+import { changeFName, changeLName, changeEmail, changeSubject, changeMessage } from '../../utils/slices/contactSlice';
 
 //To Do: Fix so that messageData is passing from parent to child
 const Contact = () => {
@@ -31,11 +27,11 @@ const Contact = () => {
 
 	const handleSubmit = () => {
 		console.log(initialState);
-		dispatch(fName(initialState.fName));
-		dispatch(lName(initialState.lName));
-		dispatch(email(initialState.email));
-		dispatch(subject(initialState.subject));
-		dispatch(message(initialState.message));
+		dispatch(changeFName(initialState.fName));
+		dispatch(changeLName(initialState.lName));
+		dispatch(changeEmail(initialState.email));
+		dispatch(changeSubject(initialState.subject));
+		dispatch(changeMessage(initialState.message));
 		setShowDialog(true);
 	};
 

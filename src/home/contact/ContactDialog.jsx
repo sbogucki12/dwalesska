@@ -2,7 +2,7 @@ import './contact.css';
 import { useSelector } from 'react-redux';
 
 const ContactDialog = (props) => {
-	const contactData = useSelector((state) => state);
+	const contactData = useSelector((state) => state.contact);
 
 	const handleSubmit = () => {
 		props.setShowContactMessage(false);
