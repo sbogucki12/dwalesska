@@ -4,6 +4,12 @@
 
 _Developing a coaching site for a client_
 
+
+## April 27, 2021
+
+<p>Still messing around with the style:</p>
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/landing1GIF.gif" />
+
 ## April 26, 2021
 
 <p>Just messing around with the style:</p>

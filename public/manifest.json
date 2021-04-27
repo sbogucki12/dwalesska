@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "DWalesska",
+  "name": "Dania Walesska Coaching",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,14 +8,14 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "../src/assets/Studio Beach Logo with Waves Icon.svg",
+      "type": "svg",
+      "sizes": "50x50"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "../src/assets/landingBG_0.jpg",
+      "type": "jpg",
+      "sizes": "3952x5927"
     }
   ],
   "start_url": ".",
