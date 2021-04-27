@@ -81,7 +81,7 @@ const Contact = () => {
 	return (
 		<div id="contactContainer">
 			<div id="contactTitle">
-				<h4>Contact Dania...</h4>
+				<h4>Contact Provider...</h4>
 			</div>
 			<div id="contactFormContainer">{showContactMessage ? contactMessage : initialContact}</div>
 			{showDialog ? (

@@ -4,6 +4,12 @@
 
 _Developing a coaching site for a client_
 
+## April 26, 2021
+
+<p>Just messing around with the style:</p>
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/landingStyle0JPG.jpg" />
+
+
 ## April 20, 2021
 
 <p>Wired up contact form with Redux</p>

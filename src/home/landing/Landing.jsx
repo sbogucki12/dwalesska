@@ -4,11 +4,11 @@ const Landing = () => {
 	return (
 		<div id='landingContainer'>
 			<div>
-				<button>Learn More</button>
+				<button id='learnMoreButton'>Learn More</button>
 			</div>
-			<div>
-				<h1> 
-					Landing
+			<div id='landingTitleContainer'>
+				<h1 id='landingTitleText'> 
+					Provider Name
 				</h1>
 			</div>
 		</div>
