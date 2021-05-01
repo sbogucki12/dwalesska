@@ -5,6 +5,12 @@
 _Developing a coaching site for a client_
 
 
+## April 30, 2021
+
+<p>Building an Instagram widget:</p>
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/instagram0GIF.gif" />
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/instagram0jpg.jpg" />
+
 ## April 27, 2021
 
 <p>Still messing around with the style:</p>
