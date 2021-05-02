@@ -1,9 +1,11 @@
 .igContainer {
     display: flex; 
-    flex-direction: row;
-    width: 90vw; 
+    flex-direction: column;
+    width: 100vw; 
+    height: 40vh;
     flex-wrap: wrap; 
     justify-content: space-evenly;
+    overflow: hidden;
 }
 
 .imageContainer {
@@ -11,16 +13,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3%;    
+    margin: 3%;   
+    height: 20vh; 
+    flex-direction: row;
+    width: 100vw;
+
+}
+
+.imageAndCaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image {
     border: 3px solid var(--secondary-color);
-    height:fit-content
+    border-radius: 5%;
+    height: 30vh;
+    width: 25vw;
 }
 
 .captionContainer {
-    width: 300px; 
+    width: 20vw; 
+    height: 5vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -30,5 +45,14 @@
     background-color: rgba(255, 255, 255, 0.7);
     border: 2px solid var(--primary-color);
     border-radius: 10%;
+    font-size: .5rem;
+    overflow: hidden;
+}
+
+#arrowContainer {
+    display: flex; 
+    width: 100vw; 
+    justify-content: center;
+    align-items: center;
 }
 

@@ -2,41 +2,38 @@ import { useState, useEffect } from 'react';
 import './instagram.css';
 
 const Instagram = () => {
-	const [igImages, setIgImages] = useState([]);
-	const [igVideos, setIgVideos] = useState([]);
+	const [igData, setIgData] = useState([]);
 
-	function handleErrors(response) {
+	const handleErrors = (response) => {
 		if (!response.ok) {
 			throw Error(response.statusText);
 		}
 		return response;
-	}
+	};
 
 	useEffect(() => {
-		fetch(
-			'https://graph.instagram.com/me/media?fields=id,caption,permalink,media_url,media_type&access_token='
-		)
+		fetch('./igData.json')
 			.then(handleErrors)
 			.then((response) => response.json())
 			.then((data) => {
-				data.data.forEach((item) => {
-					if (item.caption.length > 50) {
-						item.caption = item.caption.slice(0, 50) + '...';
-					}
-				});
-				const images = data.data.filter((file) => file.media_type === 'IMAGE');
-				const videos = data.data.filter((file) => file.media_type === 'VIDEO');
-				setIgImages(images);
-				setIgVideos(videos);
+				console.log(data);
+				setIgData(data.data);
 			})
 			.catch((error) => console.log(error));
 	}, []);
 
-	const images = igImages.map((image) => {
+	const images = igData.map((image) => {
 		return (
 			<div key={image.id}>
-				<div className="imageContainer">
-					<img src={image.media_url} alt="IG" title="Ig Image" width="350px" height="400px" className='image' />
+				<div className="imageAndCaption">
+					<img
+						src={image.media_url}
+						alt="IG"
+						title="Ig Image"
+						width="350px"
+						height="400px"
+						className="image"
+					/>
 					<div className="captionContainer">
 						<p>{image.caption}</p>
 					</div>
@@ -45,7 +42,7 @@ const Instagram = () => {
 		);
 	});
 
-	const videos = igVideos.map((video) => {
+	/* const videos = igVideos.map((video) => {
 		return (
 			<div key={video.id}>
 				<div className="imageContainer">
@@ -66,15 +63,28 @@ const Instagram = () => {
 				</div>
 			</div>
 		);
-	});
+	}); */
 	return (
-		<div>
-			<div className="igContainer">
+		<div className="igContainer">
+			<div className="imageContainer">
 				{images}
-				{videos}
+				{/*{videos}*/}
 			</div>
+			<div id="arrowContainer">{/*<button onClick={handleOnClickMore}>More</button>*/}</div>
 		</div>
 	);
 };
 
 export default Instagram;
+
+/*data.data.forEach((item) => {
+					if (item.caption.length > 50) {
+						item.caption = item.caption.slice(0, 50) + '...';
+					}
+				});
+				let images = data.data.filter((file) => file.media_type === 'IMAGE');
+				let videos = data.data.filter((file) => file.media_type === 'VIDEO');
+				setIgImages(images);
+				images = images.splice(0, 3);
+				setIgImagesSliced(images);
+				setIgVideos(videos);*/
