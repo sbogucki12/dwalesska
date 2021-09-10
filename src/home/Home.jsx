@@ -1,26 +1,14 @@
-import Header from './header/Header';
-import './home.css';
-import Layout from './layout/Layout';
-import DummyComponent from './dummyComponent/DummyComponent';
-import Landing from './landing/Landing';
-import Contact from './contact/Contact';
-import Instagram from './instagram/Instagram';
-import Row0 from './row0/Row0';
+import { useState } from "react";
+import HomeMobile from "./HomeMobile";
+import HomeDesktop from "./HomeDesktop";
 
-function Home() {
-	return (
-		<div>
-			<Layout
-				header={<Header />}
-				landing={<Landing />}
-				row0={<Row0 />}
-				row1={<DummyComponent />}
-				row2={<DummyComponent />}
-				row3={<Instagram />}
-				footer={<Contact />}
-			/>
-		</div>
-	);
-}
+const Home = () => {
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
+
+  window.onresize = function () {
+    setInnerWidth(window.innerWidth);
+  };
+  return <div>{innerWidth > 450 ? <HomeDesktop /> : <HomeMobile />}</div>;
+};
 
 export default Home;

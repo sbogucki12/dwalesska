@@ -6,16 +6,6 @@
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
-    },
-    {
-      "src": "../src/assets/Studio Beach Logo with Waves Icon.svg",
-      "type": "svg",
-      "sizes": "50x50"
-    },
-    {
-      "src": "../src/assets/landingBG_0.jpg",
-      "type": "jpg",
-      "sizes": "3952x5927"
     }
   ],
   "start_url": ".",

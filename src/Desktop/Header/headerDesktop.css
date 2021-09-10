@@ -1,0 +1,10 @@
+.headerDesktopContainer {
+    background-color: var(--background-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+

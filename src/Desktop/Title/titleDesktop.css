@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "BrittanySignature";
+    src: local("BrittanySignature"),
+     url("../../utils/fonts/BrittanySignature.ttf") format("truetype");
+    font-weight: bold;
+    }
+
+.titleDesktopContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleMainText {
+    font-family: "BrittanySignature";
+}

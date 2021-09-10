@@ -1,14 +1,7 @@
 
 html {
-  --primary-color-lightest: #eeb5eb;
-  --primary-color-light: #c26dbc;
-  --primary-color: #8b73ff;
-  --primary-color-dark: #727274;
-  --primary-color-darkest: #776391;  
-  --secondary-color-light: #c3fffc;  
-  --secondary-color: #3cacae;
-
-  min-height: 100vh;  
+  --background-primary: #FBFAFA;
+  --background-secondary: #F5F7F8;   
 }
 
 body {

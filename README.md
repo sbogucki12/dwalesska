@@ -4,6 +4,21 @@
 
 _Developing a coaching site for a client_
 
+## Sept 10, 2021
+
+<p>Set up the layout:</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/desktopLayout0GIF.gif" />
+
+
+## Sept 9, 2021
+
+<p>After a long time of setting this on the backburner, returning to project with a totally fresh start.</p>
+<p>Client provided fresh designs:</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/newDesignDesktop.jpg" />
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/newDesignMobile.jpg" />
+
 
 ## April 30, 2021
 
