@@ -3,9 +3,9 @@ import './bodyDesktop.css';
 const BodyDesktop = () => {
   return(
     <div className="bodyDesktopContainer">
-      <h1>Image</h1>
+      <img src="/images/dania_main.jpg" title="Dania Walesska Coaching" alt="Dania Walesska Coaching" />
       <p>Make a Map to Your Dreams</p>
-      <button>Contact Me</button>
+      <button className="btnMain">Contact Me</button>
     </div>
   )
 };

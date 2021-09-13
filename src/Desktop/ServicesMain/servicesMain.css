@@ -1,0 +1,31 @@
+.servicesMainLineContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesMainLine {
+    border-top: 2px solid black;
+    width: 40%;
+}
+
+.servicesLineText {
+    padding: 5px; 
+}
+
+.servicesMainCellsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceMainMiddleCellContainer {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.sevicesMainCell {
+    padding: 2%;    
+}

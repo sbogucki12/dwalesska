@@ -4,6 +4,13 @@
 
 _Developing a coaching site for a client_
 
+
+## Sept 13, 2021
+
+<p>Making progress:</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/mainDesktop0GIF.gif" />
+
 ## Sept 10, 2021
 
 <p>Set up the layout:</p>

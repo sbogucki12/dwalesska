@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "servicesHeader": "REMOVING OBSTACLES",
+    "servicesText": "We all have places in our life where we are blocked. Working together, we will identify those blocks and find ways for you to overcome them.",
+    "servicesButtonText": "CONTACT ME"
+  },
+  {
+    "id": 1,
+    "servicesHeader": "BE YOUR BEST SELF",
+    "servicesText": "Life is full of opportunities, and it is my job to help you figure out which opportunities to take advantage of in order to live the life you want.",
+    "servicesButtonText": "LEARN MORE"
+  },
+  {
+    "id": 2,
+    "servicesHeader": "LIVE YOUR DREAMS",
+    "servicesText": "When you choose to live a dream, you need a plan to make it come true. Once you have a plan, a coach will help you stick to it and get around any obstacles.",
+    "servicesButtonText": "BOOK NOW"
+  }
+]
