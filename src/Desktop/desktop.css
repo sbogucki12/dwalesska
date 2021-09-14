@@ -17,3 +17,9 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.chatBoxFABSticky {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}

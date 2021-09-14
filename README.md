@@ -4,6 +4,12 @@
 
 _Developing a coaching site for a client_
 
+## Sept 14, 2021
+
+<p>Plodding along. Added the Floating Action Button for the chatbox.:</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/mainDesktop1GIF.gif" />
+
 
 ## Sept 13, 2021
 

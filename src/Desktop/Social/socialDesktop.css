@@ -1,0 +1,29 @@
+.socialDesktopContainer {
+    padding-top: 2vh;
+}
+
+.socialIconContainer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+}
+
+.socialIconFABContainer {
+    border-radius: 50px;
+    background-color: red;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.socialIconFABContainer:hover {
+    opacity: .5;
+}
+
+.socialIcon {
+    font-size: 30px;
+}
