@@ -8,7 +8,7 @@ import ServicesSecondaryDesktop from "../Desktop/ServicesSecondary/ServicesSecon
 import FooterDesktop from "../Desktop/Footer/FooterDesktop";
 import SubscribeDesktop from "../Desktop/Subscribe/SubscribeDesktop";
 import SocialDesktop from "../Desktop/Social/SocialDesktop";
-import ChatBoxFAB from "../Desktop/ChatBox/chatBoxFAB";
+import ChatBoxFAB from "../Desktop/ChatBox/ChatBoxFAB";
 
 const layout = {
   header: <HeaderDesktop />,

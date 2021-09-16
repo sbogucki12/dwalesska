@@ -4,12 +4,17 @@
 
 _Developing a coaching site for a client_
 
+## Sept 15, 2021
+
+<p>Started the UI on a custom little chatbox feature.:</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/chatbox0GIF.gif" />
+
 ## Sept 14, 2021
 
 <p>Plodding along. Added the Floating Action Button for the chatbox.:</p>
 
 <img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/mainDesktop1GIF.gif" />
-
 
 ## Sept 13, 2021
 
@@ -23,7 +28,6 @@ _Developing a coaching site for a client_
 
 <img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/desktopLayout0GIF.gif" />
 
-
 ## Sept 9, 2021
 
 <p>After a long time of setting this on the backburner, returning to project with a totally fresh start.</p>
@@ -31,7 +35,6 @@ _Developing a coaching site for a client_
 
 <img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/newDesignDesktop.jpg" />
 <img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/newDesignMobile.jpg" />
-
 
 ## April 30, 2021
 
@@ -48,7 +51,6 @@ _Developing a coaching site for a client_
 
 <p>Just messing around with the style:</p>
 <img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/landingStyle0JPG.jpg" />
-
 
 ## April 20, 2021
 

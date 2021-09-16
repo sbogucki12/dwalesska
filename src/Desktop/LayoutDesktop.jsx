@@ -23,9 +23,7 @@ const LayoutDesktop = (props) => {
         <div>{props.layout.social}</div>
         <div>{props.layout.footer}</div>
       </div>
-      <div className="chatBoxFABSticky">
-        {props.layout.chatBox}
-      </div>
+      <div>{props.layout.chatBox}</div>
     </div>
   );
 };
