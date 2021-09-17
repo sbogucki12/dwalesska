@@ -4,6 +4,12 @@
 
 _Developing a coaching site for a client_
 
+## Sept 16, 2021
+
+<p>More to the chatbox UI:</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/chatboxGIF1.gif" />
+
 ## Sept 15, 2021
 
 <p>Started the UI on a custom little chatbox feature.:</p>

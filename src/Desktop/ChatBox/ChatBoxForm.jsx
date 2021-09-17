@@ -7,11 +7,11 @@ const ChatBoxForm = (props) => {
         <span
           style={{ paddingLeft: "5%", fontSize: "1.4rem", marginTop: "5%" }}
         >
-          Dania Walesska Coaching
+          DANIA WALESSKA COACHING
         </span>{" "}
       </div>
       <div className="chatBoxMainPaper">
-        <div style={{ padding: "1%" }}>
+        <div style={{ padding: "1%" }} className="chatBoxFormCaption">
           Hi! Let us know how we can help and we’ll respond shortly.
         </div>
         <div>
@@ -22,7 +22,7 @@ const ChatBoxForm = (props) => {
               rows="4"
               cols="35"
               placeholder="How Can We Help?"
-              style={{ height: "30vh" }}
+              className="chatBoxTextArea"
             />
           </div>
           <div style={{ marginTop: "5px" }}>
