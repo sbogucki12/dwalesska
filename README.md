@@ -4,6 +4,12 @@
 
 _Developing a coaching site for a client_
 
+## Sept 20, 2021
+
+<p>Added placeholder "Submittal" functionality to chatbox:</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/chatBoxSubmittal0GIF.gif" />
+
 ## Sept 16, 2021
 
 <p>More to the chatbox UI:</p>

@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
+@font-face {
+  font-family: "BrittanySignature";
+  src: local("BrittanySignature"),
+    url("../../utils/fonts/BrittanySignature.ttf") format("truetype");
+  font-weight: bold;
+}
+
 .chatBoxMainContainer {
   box-shadow: -2px 5px 10px lightgray;
   border-style: solid;
@@ -83,4 +90,17 @@
   font-family: "Raleway", sans-serif;
   color: black;
   font-weight: bolder;
+}
+
+.chatboxSubmittalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.chatBoxDania {
+  font-family: "BrittanySignature";
 }
