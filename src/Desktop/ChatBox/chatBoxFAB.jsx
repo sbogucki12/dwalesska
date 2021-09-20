@@ -15,7 +15,12 @@ const ChatBoxFAB = () => {
 
   return (
     <div>
-      <ChatBoxMain showChatBox={showChatBox} setShowChatBox={setShowChatBox} />
+      {showChatBox ? (
+        <ChatBoxMain
+          showChatBox={showChatBox}
+          setShowChatBox={setShowChatBox}
+        />
+      ) : null}
       <div
         className="chatBoxFABContainer"
         onClick={() => setShowChatBox(!showChatBox)}

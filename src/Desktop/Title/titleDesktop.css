@@ -3,7 +3,7 @@
     src: local("BrittanySignature"),
      url("../../utils/fonts/BrittanySignature.ttf") format("truetype");
     font-weight: bold;
-    }
+}
 
 .titleDesktopContainer {
     display: flex;

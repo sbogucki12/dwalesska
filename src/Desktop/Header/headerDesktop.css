@@ -5,6 +5,15 @@
     align-items: center;    
     gap: 1vw;
     padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-bottom: 1vh;    
 }
 
+.headerLink {
+    text-decoration: none;
+    color: black;
+}
+
+.headerLink:hover {
+    background-color: lightblue;
+    border-radius: 5px;
+ }
