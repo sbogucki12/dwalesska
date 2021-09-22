@@ -1,19 +1,89 @@
 .headerDesktopContainer {
-    background-color: var(--background-secondary);
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    gap: 1vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;    
+  background-color: var(--background-secondary);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.headerLinkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  white-space: nowrap;
+  margin-left: 44%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .headerLink {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .headerLink:hover {
-    background-color: lightblue;
-    border-radius: 5px;
- }
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+.headerLanguageSliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 5px;
+  gap: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.headerLanguageSwitch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.headerLanguageSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.headerLanguageSlider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 34px;
+}
+
+.headerLanguageSlider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 24px;
+  background-color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+
+input:checked + .headerLanguageSlider {
+  background-color: #2196f3;
+}
+
+input:focus + .headerLanguageSlider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .headerLanguageSlider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
