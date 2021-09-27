@@ -10,19 +10,19 @@ import SubscribeDesktop from "../Desktop/Subscribe/SubscribeDesktop";
 import SocialDesktop from "../Desktop/Social/SocialDesktop";
 import ChatBoxFAB from "../Desktop/ChatBox/ChatBoxFAB";
 
-const layout = {
-  header: <HeaderDesktop />,
-  title: <TitleDesktop />,
-  body: <BodyDesktop />,
-  servicesMain: <ServicesMainDesktop />,
-  servicesSecondary: <ServicesSecondaryDesktop />,
-  subscribe: <SubscribeDesktop />,
-  social: <SocialDesktop />,
-  footer: <FooterDesktop />,
-  chatBox: <ChatBoxFAB />
-};
+const HomeDesktop = (props) => {
+  const layout = {
+    header: <HeaderDesktop />,
+    title: <TitleDesktop />,
+    body: <BodyDesktop />,
+    servicesMain: <ServicesMainDesktop />,
+    servicesSecondary: <ServicesSecondaryDesktop />,
+    subscribe: <SubscribeDesktop />,
+    social: <SocialDesktop />,
+    footer: <FooterDesktop />,
+    chatBox: <ChatBoxFAB />,
+  };
 
-const HomeDesktop = () => {
   return (
     <Fragment>
       <LayoutDesktop layout={layout} />

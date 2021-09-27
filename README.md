@@ -4,6 +4,13 @@
 
 _Developing a coaching site for a client_
 
+## Sept 27, 2021
+
+<p>Implemented React context to provide bilingual localization.</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/context0GIF.gif" />
+
+
 ## Sept 20, 2021
 
 <ul>
