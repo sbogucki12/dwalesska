@@ -1,7 +1,10 @@
+import { useLanguageContext } from "../../utils/LanguageProvider";
+
 const FooterDesktop = () => {
+  const languageText = useLanguageContext();
   return (
-    <div>
-      <h4>Copyright © 2021 Dania Walesska Coaching - All Rights Reserved.</h4>
+    <div style={{ textAlign: "center" }}>
+      <h4>{languageText.COPYRIGHT}</h4>
     </div>
   );
 };

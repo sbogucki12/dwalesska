@@ -1,4 +1,6 @@
 import { useState, createContext, useContext } from "react";
+import languageTextEnglish from './languageTextEn.json';
+import languageTextSpanish from './languageTextSpanish.json';
 
 const LanguageContext = createContext();
 const LanguageUpdateContext = createContext();
@@ -12,14 +14,13 @@ export const useLanguageUpdateContext = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("english");
+  const [language, setLanguage] = useState(languageTextEnglish);
 
-  const toggleLanguage = (e) => {
-    console.log(e.target.checked)
-    if (language === "english") {
-      setLanguage("spanish");
-    } else if (language === "spanish") {
-      setLanguage("english");
+  const toggleLanguage = (e) => {        
+    if (e.target.checked === true) {
+      setLanguage(languageTextSpanish);
+    } else if (e.target.checked === false) {
+      setLanguage(languageTextEnglish);
     }
   };
 

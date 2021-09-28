@@ -4,35 +4,19 @@ import {
   useLanguageContext,
   useLanguageUpdateContext,
 } from "../../utils/LanguageProvider";
+import languageTextEnglish from "../../utils/languageTextEn.json";
+import languageTextSpanish from "../../utils/languageTextSpanish.json";
 
 const HeaderDesktop = (props) => {
-  const language = useLanguageContext();
+  const languageText = useLanguageContext();
   const toggleLanguage = useLanguageUpdateContext();
 
-  let languageText = {
-    HOME: "HOME",
-    ABOUTUS: "ABOUT US",
-    CONTACT: "CONTACT",
-    ENGLISH: "ENGLISH",
-    SPANISH: "SPANISH",
-  };
+  let toggleBool;
 
-  if (language === "spanish") {
-    languageText = {
-      HOME: "SPANISH",
-      ABOUTUS: "SPANISH",
-      CONTACT: "SPANISH",
-      ENGLISH: "ENGLISH",
-      SPANISH: "SPANISH",
-    };
-  }
-
-  let checkedBool;
-
-  if (language === "spanish") {
-    checkedBool = true;
-  } else if (language === "english") {
-    checkedBool = false;
+  if (languageText === languageTextEnglish) {
+    toggleBool = false;
+  } else if (languageText === languageTextSpanish) {
+    toggleBool = true;
   }
 
   return (
@@ -50,8 +34,8 @@ const HeaderDesktop = (props) => {
         <span>{languageText.ENGLISH}</span>{" "}
         <label className="headerLanguageSwitch">
           <input
+            checked={toggleBool}
             type="checkbox"
-            checked={checkedBool}
             onChange={(e) => toggleLanguage(e)}
           />
           <span className="headerLanguageSlider"></span>

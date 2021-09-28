@@ -2,13 +2,17 @@ import "./chatBox.css";
 import { useState } from "react";
 import ChatBoxFormContent from "./ChatBoxFormContent";
 import ChatBoxSubmittal from "./ChatBoxSubmittal";
+import { useLanguageContext } from "../../utils/LanguageProvider";
 
 const ChatBoxForm = (props) => {
+  const languageText = useLanguageContext();
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [chatboxButtonLabel, setChatboxButtonLabel] = useState("SEND");
+  const [chatboxButtonLabel, setChatboxButtonLabel] = useState(
+    languageText.SEND
+  );
 
   const onSetFormSubmitted = () => {
-    setChatboxButtonLabel("Sending...");
+    setChatboxButtonLabel(languageText.SENDING);
     setTimeout(() => {
       setFormSubmitted(true);
     }, 2000);
@@ -20,7 +24,7 @@ const ChatBoxForm = (props) => {
         <span
           style={{ paddingLeft: "5%", fontSize: "1.4rem", marginTop: "5%" }}
         >
-          DANIA WALESSKA COACHING
+          {languageText.DANIAWALESSKACOACHING.toUpperCase()}
         </span>{" "}
       </div>
       <div className="chatBoxMainPaper">
@@ -33,10 +37,7 @@ const ChatBoxForm = (props) => {
           />
         )}
         <div className="chatBoxFormCaptchaWarningContainer">
-          <p>
-            This site is protected by reCAPTCHA and the Google Privacy Policy
-            and Terms of Service apply.
-          </p>
+          <p>{languageText.PROTECTEDBYCAPTCHA}</p>
         </div>
       </div>
     </div>

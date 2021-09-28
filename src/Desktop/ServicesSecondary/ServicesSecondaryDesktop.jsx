@@ -1,7 +1,11 @@
+import { useLanguageContext } from "../../utils/LanguageProvider";
+
 const ServicesSecondaryDesktop = () => {
+  const languageText = useLanguageContext();
+
   return (
     <div>
-      <h1>New services are coming soon!</h1>
+      <h1>{languageText.NEWSERVICESARECOMINGSOON}</h1>
     </div>
   );
 };

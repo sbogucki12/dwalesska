@@ -1,12 +1,15 @@
 import "./chatBox.css";
+import { useLanguageContext } from '../../utils/LanguageProvider';
 
 const ChatBoxSubmittal = () => {
+  const languageText = useLanguageContext();
+
   return (
     <div className="chatboxSubmittalContainer">
       <h1 style={{ textAlign: "center" }}>
-        Thank you for contacting <span className="chatBoxDania">Dania</span>
+        {languageText.THANKYOUFORCONTACTING}<span className="chatBoxDania">Dania</span>
       </h1>
-      <h4>We will respond shortly!</h4>
+      <h4>{languageText.WEWILLRESPONDSHORTLY}</h4>
     </div>
   );
 };

@@ -5,40 +5,7 @@ import reviewsBackground from "./reviewsBackground.webp";
 import { useLanguageContext } from "../../utils/LanguageProvider";
 
 const AboutMain = () => {
-  const language = useLanguageContext();
-
-  let languageText = {
-    CHOOSEYOURFUTURE: "CHOOSE YOUR FUTURE",
-    DANIAWALESSKACOACHING: "Dania Walesska Coaching",
-    ABOUTME: "About Me",
-    SUPPORTFORTHEJOURNEY: "Support for the Journey",
-    SUPPORTFORTHEJOURNEYTEXT:
-      "My goal is to help you re-imagine your life. With extensive experience in Life Coaching and a vast history of client success, my individualized positivity approach will help you attain your goals.",
-    PROFESSIONALISMANDEXPERIENCE: "Professionalism and Experience",
-    PROFESSIONALISMANDEXPERIENCETEXT:
-      "As a professionally trained and experienced life coach, I have the tools and understanding to help you to create the life you imagine and get a renewed sense of self.",
-    TAKINGTHESTEPS: "Taking the Steps",
-    TAKINGTHESTEPSTEXT:
-      "Committing to a healthier lifestyle is just that – a commitment, and it’s a big one that will take a lot a dedication. My commitment is to provide you with accountability, understanding and support.",
-    FAQ: "FAQ",
-    REVIEWS: "REVIEWS",
-  };
-
-  if (language === "spanish") {
-    languageText = {
-      CHOOSEYOURFUTURE: "SPANISH",
-      DANIAWALESSKACOACHING: "SPANISH",
-      ABOUTME: "SPANISH",
-      SUPPORTFORTHEJOURNEY: "SPANISH",
-      SUPPORTFORTHEJOURNEYTEXT: "SPANISH",
-      PROFESSIONALISMANDEXPERIENCE: "SPANISH",
-      PROFESSIONALISMANDEXPERIENCETEXT: "SPANISH",
-      TAKINGTHESTEPS: "SPANISH",
-      TAKINGTHESTEPSTEXT: "SPANISH",
-      FAQ: "SPANISH",
-      REVIEWS: "SPANISH",
-    };
-  }
+  const languageText = useLanguageContext();
 
   return (
     <div>
