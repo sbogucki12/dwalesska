@@ -1,5 +1,6 @@
 import "./bodyDesktop.css";
 import { useLanguageContext } from "../../utils/LanguageProvider";
+import { Link } from "react-router-dom";
 
 const BodyDesktop = () => {
   const languageText = useLanguageContext();
@@ -8,11 +9,11 @@ const BodyDesktop = () => {
     <div className="bodyDesktopContainer">
       <img
         src="/images/dania_main.jpg"
-        title="Dania Walesska Coaching"
-        alt="Dania Walesska Coaching"
+        title={languageText.DANIAWALESSKACOACHING}
+        alt={languageText.DANIAWALESSKACOACHING}
       />
       <p>{languageText.MAKEAMAPTOYOURDREAMS}</p>
-      <button className="btnMain">{languageText.CONTACTME}</button>
+      <Link to="/contact"><button className="btnMain">{languageText.CONTACTME}</button></Link>
     </div>
   );
 };

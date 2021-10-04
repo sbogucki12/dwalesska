@@ -1,10 +1,21 @@
 import ServicesCell from "./ServicesCell";
-import servicesContent from "./servicesContent.json";
+import servicesContentEnglish from "./servicesContent.json";
+import servicesContentSpanish from "./servicesContentSpanish.json";
 import "./servicesMain.css";
-import { useLanguageContext } from '../../utils/LanguageProvider';
+import { useLanguageContext } from "../../utils/LanguageProvider";
+import languageTextEnglish from "../../utils/languageTextEn.json";
+import languageTextSpanish from "../../utils/languageTextSpanish.json";
 
 const ServicesMainDesktop = () => {
-  const languageText = useLanguageContext(); 
+  const languageText = useLanguageContext();
+
+  let servicesContent = servicesContentEnglish;
+
+  if (languageText === languageTextEnglish) {
+    servicesContent = servicesContentEnglish;
+  } else if (languageText === languageTextSpanish) {
+    servicesContent = servicesContentSpanish;
+  }
 
   return (
     <div>

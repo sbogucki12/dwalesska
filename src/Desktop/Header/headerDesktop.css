@@ -1,4 +1,14 @@
+.headerDesktopSticky {
+  position: sticky;
+  top: 0;
+}
+
 .headerDesktopContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContactBarContainer {
   background-color: var(--background-secondary);
   display: flex;
   justify-content: space-between;

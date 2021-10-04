@@ -12,8 +12,7 @@ import ChatBoxFAB from "../Desktop/ChatBox/ChatBoxFAB";
 
 const HomeDesktop = (props) => {
   const layout = {
-    header: <HeaderDesktop />,
-    title: <TitleDesktop />,
+    header: <HeaderDesktop />,    
     body: <BodyDesktop />,
     servicesMain: <ServicesMainDesktop />,
     servicesSecondary: <ServicesSecondaryDesktop />,

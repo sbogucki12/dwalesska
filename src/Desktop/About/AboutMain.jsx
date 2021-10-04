@@ -10,13 +10,7 @@ const AboutMain = () => {
   return (
     <div>
       <HeaderDesktop />
-      <div className="aboutContainer">
-        <div>
-          <div>
-            <h1 className="aboutTitle">{languageText.DANIAWALESSKACOACHING}</h1>
-            <p>{languageText.CHOOSEYOURFUTURE}</p>
-          </div>
-        </div>
+      <div className="aboutContainer">        
         <div className="aboutMainContainer">
           <div className="aboutMainLeft">
             <div className="aboutMeBorder">

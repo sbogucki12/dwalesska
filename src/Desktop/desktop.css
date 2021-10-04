@@ -1,8 +1,3 @@
-.headerDesktopSticky {
-  position: sticky;
-  top: 0;
-}
-
 .bodyDesktopBackground {
   background-color: var(--background-primary);
   display: flex;

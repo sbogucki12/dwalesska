@@ -1,8 +1,8 @@
 import "./titleDesktop.css";
-import { useLanguageContext } from '../../utils/LanguageProvider';
+import { useLanguageContext } from "../../utils/LanguageProvider";
 
 const TitleDesktop = () => {
-  const languageText = useLanguageContext(); 
+  const languageText = useLanguageContext();
   return (
     <div className="titleDesktopContainer">
       <h1 className="titleMainText">{languageText.DANIAWALESSKACOACHING}</h1>
