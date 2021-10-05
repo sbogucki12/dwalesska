@@ -33,6 +33,11 @@
   "SUBSCRIBE": "SUBSCRIBE",
   "SUBSCRIPTIONSALE": "Get 10% off your first purchase when you sign up for our newsletter!",
   "SIGNUP": "SIGN UP",
-  "EMAILADDRESS": "Email Address...", 
-  "CONTACTTITLE": "Contact Main"
+  "EMAILADDRESS": "Email Address...",
+  "CONTACTTITLE": "Contact Main",
+  "STARTLIVINGTODAY": "START LIVING TODAY!",
+  "CONTACTTEXT": "I am here for your! If you have any questions or just want to connect, send me a message or a WhatsApp.",
+  "SENDMEAWHATSAPP": "Send me a WhatsApp",
+  "MESSAGEME": "MESSAGE ME",
+  "CONTACTMELOWERCASE": "Contact Me"
 }

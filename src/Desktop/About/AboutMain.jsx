@@ -3,6 +3,7 @@ import HeaderDesktop from "../Header/HeaderDesktop";
 import ChatBoxFAB from "../ChatBox/ChatBoxFAB";
 import reviewsBackground from "./reviewsBackground.webp";
 import { useLanguageContext } from "../../utils/LanguageProvider";
+import FooterDesktop from "../Footer/FooterDesktop";
 
 const AboutMain = () => {
   const languageText = useLanguageContext();
@@ -59,7 +60,7 @@ const AboutMain = () => {
             <h1 className="reviewsTitleText">{languageText.REVIEWS}</h1>
           </div>
         </div>
-        <div>Footer</div>
+        <div><FooterDesktop /></div>
         <div>
           <ChatBoxFAB />
         </div>

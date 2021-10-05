@@ -4,6 +4,14 @@
 
 _Developing a coaching site for a client_
 
+
+## Oct 5, 2021
+
+<p>Building out the contact page.</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/contact2GIF.gif" />
+
+
 ## Sept 27, 2021
 
 <p>Implemented React context to provide bilingual localization.</p>

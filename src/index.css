@@ -30,4 +30,5 @@ code {
 }
 .btnMain:hover {
   background-color: gray;
+  color: white;
 }
