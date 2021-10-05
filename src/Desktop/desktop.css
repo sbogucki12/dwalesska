@@ -1,5 +1,4 @@
-.bodyDesktopBackground {
-  background-color: var(--background-primary);
+.bodyDesktopBackground {  
   display: flex;
   align-items: center;
   justify-content: center;

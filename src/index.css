@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
 html {
-  --background-primary: #fbfafa;
+  --background-primary: white;
   --background-secondary: #f5f7f8;  
 }
 
@@ -12,7 +12,7 @@ body {
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background-primary);
+  background-color: white;
 }
 
 code {

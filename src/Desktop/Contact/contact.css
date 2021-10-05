@@ -1,0 +1,15 @@
+.contactMainBoxContainer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMainLeftBoxContainer {
+    width: 40%;
+    border: 5px solid black;
+    display: flex;
+    row-gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}

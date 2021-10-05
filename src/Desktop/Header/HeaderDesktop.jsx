@@ -30,7 +30,9 @@ const HeaderDesktop = (props) => {
           <Link to="/about" className="headerLink">
             <span>{languageText.ABOUTUS}</span>
           </Link>
-          <span className="headerLink">{languageText.CONTACT}</span>
+          <Link to="/contact" className="headerLink">
+            <span>{languageText.CONTACT}</span>
+          </Link>
         </div>
         <div className="headerLanguageSliderContainer">
           <span>{languageText.ENGLISH}</span>{" "}
@@ -46,8 +48,8 @@ const HeaderDesktop = (props) => {
         </div>
       </div>
       <div className="headerTitleContainer">
-      <TitleDesktop />
-      </div>      
+        <TitleDesktop />
+      </div>
     </div>
   );
 };
