@@ -1,7 +1,6 @@
 import { useState } from "react";
 import HomeMobile from "./HomeMobile";
 import HomeDesktop from "./HomeDesktop";
-//import { LanguageProvider } from "../utils/LanguageProvider";
 
 const Home = (props) => {
   const [innerWidth, setInnerWidth] = useState(window.innerWidth);

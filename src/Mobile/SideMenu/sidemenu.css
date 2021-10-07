@@ -1,0 +1,52 @@
+.sideMenuHeaderContainer {
+    background-color: var(--background-secondary);
+}
+
+.sideMenuContainer {
+    background-color: #161616;
+    color: #F7F7F7;
+    width: 100%; 
+    height: 100vh;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sideMenuBars {
+    color: black;
+}
+
+.sideMenuExitBtnContainer {
+    position: absolute;
+    top: 5%;
+    left: 80vw;
+}
+
+.slide-out {
+    animation: slide-out 2s forwards;
+    -webkit-animation: slide-out 2s forwards;
+}
+
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+.sideMenuExit {
+    color: white; 
+    font-size: 40px;
+}
+
+.sideMenuLinkContainer {
+    position: absolute;
+    top: 25%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
