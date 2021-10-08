@@ -5,6 +5,13 @@
 _Developing a coaching site for a client_
 
 
+## Oct 7, 2021
+
+<p>Started the mobile view.</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/mobile0GIF.gif" />
+
+
 ## Oct 5, 2021
 
 <p>Building out the contact page.</p>

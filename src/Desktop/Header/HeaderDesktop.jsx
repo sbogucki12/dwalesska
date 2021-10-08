@@ -1,24 +1,11 @@
 import "./headerDesktop.css";
 import { Link } from "react-router-dom";
-import {
-  useLanguageContext,
-  useLanguageUpdateContext,
-} from "../../utils/LanguageProvider";
-import languageTextEnglish from "../../utils/languageTextEn.json";
-import languageTextSpanish from "../../utils/languageTextSpanish.json";
+import { useLanguageContext } from "../../utils/LanguageProvider";
 import TitleDesktop from "../Title/TitleDesktop";
+import LanguageToggle from "../../utils/LanguageToggle";
 
 const HeaderDesktop = (props) => {
   const languageText = useLanguageContext();
-  const toggleLanguage = useLanguageUpdateContext();
-
-  let toggleBool;
-
-  if (languageText === languageTextEnglish) {
-    toggleBool = false;
-  } else if (languageText === languageTextSpanish) {
-    toggleBool = true;
-  }
 
   return (
     <div className="headerDesktopContainer">
@@ -34,18 +21,7 @@ const HeaderDesktop = (props) => {
             <span>{languageText.CONTACT}</span>
           </Link>
         </div>
-        <div className="headerLanguageSliderContainer">
-          <span>{languageText.ENGLISH}</span>{" "}
-          <label className="headerLanguageSwitch">
-            <input
-              checked={toggleBool}
-              type="checkbox"
-              onChange={(e) => toggleLanguage(e)}
-            />
-            <span className="headerLanguageSlider"></span>
-          </label>{" "}
-          <span>{languageText.SPANISH}</span>
-        </div>
+        <LanguageToggle />
       </div>
       <div className="headerTitleContainer">
         <TitleDesktop />

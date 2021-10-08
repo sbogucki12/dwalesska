@@ -2,6 +2,7 @@ import { useState } from "react";
 import SideMenu from "../Mobile/SideMenu/SideMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import LanguageToggle from "../utils/LanguageToggle";
 
 const HomeMobile = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -16,6 +17,9 @@ const HomeMobile = () => {
 
   return (
     <div>
+      <div>
+        <LanguageToggle />
+      </div>
       <div className="sideMenuHeaderContainer">
         <FontAwesomeIcon
           icon={faBars}

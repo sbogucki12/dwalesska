@@ -1,8 +1,10 @@
 import "./sidemenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { useLanguageContext } from "../../utils/LanguageProvider";
 
 const SideMenu = (props) => {
+  const languageText = useLanguageContext();
 
   return (
     <div className="sideMenuContainer">
@@ -15,15 +17,15 @@ const SideMenu = (props) => {
       </div>
       <div className="sideMenuLinkContainer">
         <div>
-          <h4>HOME</h4>
+          <h4>{languageText.HOME}</h4>
           <hr />
         </div>
         <div>
-          <h4>ABOUT US</h4>
+          <h4>{languageText.ABOUTUS}</h4>
           <hr />
         </div>
         <div>
-          <h4>CONTACT</h4>
+          <h4>{languageText.CONTACT}</h4>
         </div>
       </div>
     </div>
