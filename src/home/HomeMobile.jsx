@@ -3,6 +3,9 @@ import SideMenu from "../Mobile/SideMenu/SideMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import LanguageToggle from "../utils/LanguageToggle";
+import TitleMobile from "../Mobile/TitleMobile/TitleMobile";
+import FooterDesktop from "../Desktop/Footer/FooterDesktop";
+import BodyMobile from "../Mobile/BodyMobile/BodyMobile";
 
 const HomeMobile = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -28,8 +31,15 @@ const HomeMobile = () => {
         />
       </div>
       <div>{sideMenu}</div>
-      <div>Body</div>
-      <div>Footer</div>
+      <div>
+        <TitleMobile />
+      </div>
+      <div>
+        <BodyMobile />
+      </div>
+      <div>
+        <FooterDesktop />{" "}
+      </div>
     </div>
   );
 };
