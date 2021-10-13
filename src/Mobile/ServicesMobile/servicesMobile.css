@@ -1,0 +1,37 @@
+.servicesMobileContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.servicesMobileHeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; 
+  }
+  
+  .servicesMobileHRContainer {
+    width: 30%;
+  }
+  
+  .servicesMobileHeaderTextContainer {
+    padding: 5%; 
+  }
+
+  .servicesMobileTableContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .servicesContentContainer {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 90%;
+  }
+
+  .servicesMobileBtnContainer {
+      margin-bottom: 5%;
+  }
