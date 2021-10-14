@@ -5,6 +5,13 @@
 _Developing a coaching site for a client_
 
 
+
+## Oct 14, 2021
+
+<p>Continuing work on mobile view.</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/mobile2GIF.gif" />
+
 ## Oct 9, 2021
 
 <p>Continuing work on mobile view.</p>

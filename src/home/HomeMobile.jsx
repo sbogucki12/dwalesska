@@ -6,6 +6,7 @@ import LanguageToggle from "../utils/LanguageToggle";
 import TitleMobile from "../Mobile/TitleMobile/TitleMobile";
 import FooterDesktop from "../Desktop/Footer/FooterDesktop";
 import BodyMobile from "../Mobile/BodyMobile/BodyMobile";
+//import ChatBoxFAB from "../Desktop/ChatBox/ChatBoxFAB";
 
 const HomeMobile = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -40,6 +41,9 @@ const HomeMobile = () => {
       <div>
         <FooterDesktop />{" "}
       </div>
+     {/*  <div>
+        <ChatBoxFAB />
+      </div> */}
     </div>
   );
 };

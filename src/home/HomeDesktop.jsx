@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import LayoutDesktop from "../Desktop/LayoutDesktop";
 import HeaderDesktop from "../Desktop/Header/HeaderDesktop";
-import TitleDesktop from "../Desktop/Title/TitleDesktop";
 import BodyDesktop from "../Desktop/Body/BodyDesktop";
 import ServicesMainDesktop from "../Desktop/ServicesMain/ServicesMainDesktop";
 import ServicesSecondaryDesktop from "../Desktop/ServicesSecondary/ServicesSecondaryDesktop";
@@ -12,7 +11,7 @@ import ChatBoxFAB from "../Desktop/ChatBox/ChatBoxFAB";
 
 const HomeDesktop = (props) => {
   const layout = {
-    header: <HeaderDesktop />,    
+    header: <HeaderDesktop />,
     body: <BodyDesktop />,
     servicesMain: <ServicesMainDesktop />,
     servicesSecondary: <ServicesSecondaryDesktop />,

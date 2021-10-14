@@ -1,0 +1,70 @@
+.subscribeMobileContainer {
+  position: relative;
+  z-index: 1;
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribeMobileContentContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.subscribeMobileContentContainer::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 30vh;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: -1;
+  background-image: url(./tempSubscribeBackground.jpg);
+}
+
+.subscribeMobileHeaderText {
+  font-family: "Sacramento", cursive;
+  font-size: 36px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin-top: 5%;
+}
+
+.subscribeMobileText {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.subscribeMobileInput {
+  width: calc(90vw - 10px);
+  margin-top: 5%;
+  font-family: "Raleway", sans-serif;
+  background: inherit;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.subscribeMobileInput::placeholder {
+  color: black;
+  font-weight: bolder;
+}
+
+.subscribeMobileBtn {
+  width: 90vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: inherit;
+  border-radius: 25px;
+  padding: 5px;
+}

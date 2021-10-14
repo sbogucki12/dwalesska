@@ -17,7 +17,7 @@ const ServicesMobile = () => {
   }
 
   const serviceItems = servicesContent.map((service) => (
-    <div className="servicesContentContainer">
+    <div className="servicesContentContainer" key={service.id}>
       <div>
         <span style={{ fontSize: "1.5rem" }}>{service.servicesHeader}</span>
       </div>
