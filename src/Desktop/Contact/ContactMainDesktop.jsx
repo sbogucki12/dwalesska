@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import FooterDesktop from "../Footer/FooterDesktop";
 
-const ContactMain = () => {
+const ContactMainDesktop = () => {
   const languageText = useLanguageContext();
 
   return (
@@ -76,4 +76,4 @@ const ContactMain = () => {
   );
 };
 
-export default ContactMain;
+export default ContactMainDesktop;

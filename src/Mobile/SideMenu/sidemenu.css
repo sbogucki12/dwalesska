@@ -6,10 +6,10 @@
   background-color: #161616;
   color: #f7f7f7;
   width: 100%;
-  height: 100vh;
+  min-height: 2000px;
   z-index: 1000;
   position: absolute;
-  top: 35px;
+  top: 5%;
   left: 0;
 }
 
@@ -19,7 +19,7 @@
 
 .sideMenuExitBtnContainer {
   position: absolute;
-  top: 5%;
+  top: 1%;
   left: 80vw;
 }
 
@@ -30,7 +30,7 @@
 
 .sideMenuLinkContainer {
   position: absolute;
-  top: 25%;
+  top: 5%;
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;

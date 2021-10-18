@@ -2,6 +2,7 @@ import "./sidemenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useLanguageContext } from "../../utils/LanguageProvider";
+import { Link } from "react-router-dom";
 
 const SideMenu = (props) => {
   const languageText = useLanguageContext();
@@ -17,15 +18,19 @@ const SideMenu = (props) => {
       </div>
       <div className="sideMenuLinkContainer">
         <div>
-          <h4>{languageText.HOME}</h4>
+          <Link to="/">
+            <h4 style={{ color: "white" }}>{languageText.HOME}</h4>
+          </Link>
           <hr />
         </div>
         <div>
-          <h4>{languageText.ABOUTUS}</h4>
+          <h4 style={{ color: "white" }}>{languageText.ABOUTUS}</h4>
           <hr />
         </div>
         <div>
-          <h4>{languageText.CONTACT}</h4>
+          <Link to="/contact">
+            <h4 style={{ color: "white" }}>{languageText.CONTACT}</h4>
+          </Link>
         </div>
       </div>
     </div>

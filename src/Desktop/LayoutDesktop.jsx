@@ -3,10 +3,14 @@ import "./desktop.css";
 const LayoutDesktop = (props) => {
   return (
     <div>
-      <div>{props.layout.header}</div>
+      <header>
+        <div>{props.layout.header}</div>
+      </header>
       <div className="bodyDesktopBackground">
         <div className="bodyDesktopContainer">
-          <div>{props.layout.body}</div>
+          <main>
+            <div>{props.layout.body}</div>
+          </main>
           <div>
             <hr />
           </div>

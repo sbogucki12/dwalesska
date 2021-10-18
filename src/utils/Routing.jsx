@@ -2,7 +2,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "../Home/Home";
 import Error from "../Error/Error";
 import AboutMain from "../Desktop/About/AboutMain";
-import ContactMain from "../Desktop/Contact/ContactMain";
+import Contact from '../Home/Contact';
 
 const Routing = () => {
   return (
@@ -14,7 +14,7 @@ const Routing = () => {
         <AboutMain />
       </Route>
       <Route exact path="/contact">
-        <ContactMain />
+        <Contact />
       </Route>
       <Route path="*">
         <Error />

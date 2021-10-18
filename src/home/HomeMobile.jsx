@@ -21,10 +21,10 @@ const HomeMobile = () => {
 
   return (
     <div>
-      <div>
+      <div className="mobileLanguageToggleSticky">
         <LanguageToggle />
       </div>
-      <div className="sideMenuHeaderContainer">
+      <div className="sideMenuHeaderContainer mobileNavMenuSticky">
         <FontAwesomeIcon
           icon={faBars}
           className="sideMenuBars"
@@ -41,7 +41,7 @@ const HomeMobile = () => {
       <div>
         <FooterDesktop />{" "}
       </div>
-     {/*  <div>
+      {/*  <div>
         <ChatBoxFAB />
       </div> */}
     </div>

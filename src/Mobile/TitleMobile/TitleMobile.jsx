@@ -5,7 +5,7 @@ const TitleMobile = () => {
   const languageText = useLanguageContext();
 
   return (
-    <div>
+    <div style={{ marginTop: "15%" }}>
       <div className="titleMobileContainer">
         <div className="titleMobile">
           <h1 className="titleMobileText">
