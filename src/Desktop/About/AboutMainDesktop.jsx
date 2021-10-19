@@ -5,7 +5,7 @@ import reviewsBackground from "./reviewsBackground.webp";
 import { useLanguageContext } from "../../utils/LanguageProvider";
 import FooterDesktop from "../Footer/FooterDesktop";
 
-const AboutMain = () => {
+const AboutMainDesktop = () => {
   const languageText = useLanguageContext();
 
   return (
@@ -69,4 +69,4 @@ const AboutMain = () => {
   );
 };
 
-export default AboutMain;
+export default AboutMainDesktop;

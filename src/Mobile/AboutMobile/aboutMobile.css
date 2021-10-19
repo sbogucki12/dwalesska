@@ -1,0 +1,25 @@
+.aboutMobileMainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutMobileTitleContainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutMobileTitleBorder {
+  width: 25%;
+}
+
+.aboutMobileTitle {
+  font-family: Sacramento, serif, system-ui;
+  font-size: 32px;
+  padding: 5px;
+}

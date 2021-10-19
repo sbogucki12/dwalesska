@@ -1,8 +1,8 @@
 import { Switch, Route } from "react-router-dom";
 import Home from "../Home/Home";
 import Error from "../Error/Error";
-import AboutMain from "../Desktop/About/AboutMain";
-import Contact from '../Home/Contact';
+import About from "../Home/About";
+import Contact from "../Home/Contact";
 
 const Routing = () => {
   return (
@@ -11,7 +11,7 @@ const Routing = () => {
         <Home />
       </Route>
       <Route exact path="/about">
-        <AboutMain />
+        <About />
       </Route>
       <Route exact path="/contact">
         <Contact />

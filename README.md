@@ -4,6 +4,12 @@
 
 _Developing a coaching site for a client_
 
+## Oct 19, 2021
+
+<p>Building out mobile "About Me" component.</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/mobile4GIF.gif" />
+
 ## Oct 18, 2021
 
 <p>Built out mobile contact view.</p>

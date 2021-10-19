@@ -18,17 +18,19 @@ const SideMenu = (props) => {
       </div>
       <div className="sideMenuLinkContainer">
         <div>
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none" }}>
             <h4 style={{ color: "white" }}>{languageText.HOME}</h4>
           </Link>
           <hr />
         </div>
         <div>
-          <h4 style={{ color: "white" }}>{languageText.ABOUTUS}</h4>
+          <Link to="/about" style={{ textDecoration: "none" }}>
+            <h4 style={{ color: "white" }}>{languageText.ABOUTUS}</h4>
+          </Link>
           <hr />
         </div>
         <div>
-          <Link to="/contact">
+          <Link to="/contact" style={{ textDecoration: "none" }}>
             <h4 style={{ color: "white" }}>{languageText.CONTACT}</h4>
           </Link>
         </div>
