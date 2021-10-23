@@ -4,6 +4,10 @@
 
 _Developing a coaching site for a client_
 
+## Oct 22, 2021: 
+
+<p>Building an accordian for the mobile FAQs</p>
+
 ## Oct 19, 2021
 
 <p>Building out mobile "About Me" component.</p>

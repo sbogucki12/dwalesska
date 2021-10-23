@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import aboutImage from "./aboutMain_mobile.jpg";
 import FooterDesktop from "../../Desktop/Footer/FooterDesktop";
+import FaqMobileMain from "../FaqMobile/FaqMobileMain";
 
 const AboutMainMobile = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -68,6 +69,9 @@ const AboutMainMobile = () => {
           <p>{languageText.TAKINGTHESTEPSTEXT}</p>
         </div>
       </main>
+      <section>
+        <FaqMobileMain />
+      </section>
       <div>
         <FooterDesktop />
       </div>
