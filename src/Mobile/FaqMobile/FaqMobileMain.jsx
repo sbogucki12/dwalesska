@@ -1,25 +1,28 @@
 import "./faqMobile.css";
-import FaqMobileDrawers from "./FaqMobileDrawers";
-
-const faqsContent = [
-  {
-    id: 0,
-    faqMobileDrawerHeader: "Header 0",
-    faqMobileDrawerText: "Drawer Text 0",
-  },
-  {
-    id: 1,
-    faqMobileDrawerHeader: "Header 1",
-    faqMobileDrawerText: "Drawer Text 1",
-  },
-  {
-    id: 2,
-    faqMobileDrawerHeader: "Header 2",
-    faqMobileDrawerText: "Drawer Text 2",
-  },
-];
+import FaqMobileAccordion from "./FaqMobileAccordion";
+import { useLanguageContext } from "../../utils/LanguageProvider";
 
 const FaqMobileMain = () => {
+  const languageText = useLanguageContext();
+
+  const faqContent = [
+    {
+      id: 0,
+      header: languageText.FAQ0HEADER,
+      text: languageText.FAQ0TEXT,
+    },
+    {
+      id: 1,
+      header: languageText.FAQ1HEADER,
+      text: languageText.FAQ0TEXT,
+    },
+    {
+      id: 2,
+      header: languageText.FAQ2HEADER,
+      text: languageText.FAQ0TEXT,
+    },
+  ];
+
   return (
     <div>
       <div>
@@ -39,7 +42,7 @@ const FaqMobileMain = () => {
         </div>
       </div>
       <div>
-        <FaqMobileDrawers faqsContent={faqsContent} />
+        <FaqMobileAccordion faqContent={faqContent} />
       </div>
     </div>
   );

@@ -1,52 +1,58 @@
-.faqMobileDrawerContainer {
-  flex-basis: 0%;
-  padding-left: 12px;
-  padding-right: 12px;
+.accordion {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.accordion--background {
+  width: 90vw;
+}
+
+.accordion--faq-header {
+  outline: none;
+  align-items: baseline;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  justify-content: space-between;
+  text-align: left;
   font-size: 16px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  box-sizing: border-box;
-  max-width: 100%;
+  display: flex;
+  font-family: Raleway, arial, sans-serif;
+  width: 100%;
   text-transform: none;
   letter-spacing: normal;
 }
 
-.faqMobileHeaderContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+.accordion--faq-header-text {
+  font-family: Raleway, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgb(27, 27, 27);
+  text-transform: uppercase;
+  letter-spacing: 0.107em;
+  overflow-wrap: break-word;
+  padding-top: 8px;
   padding-bottom: 8px;
-  text-align: left;
-  border-bottom: 1px solid rgb(226, 226, 226);
 }
 
 .faqMobileHeaderContainerActive {
   border-bottom: none;
 }
 
-.faqMobileHeaderText {
+.accordion--faq-text {
+  color: rgb(94, 94, 94);
   font-family: Raleway, arial, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25;
-  color: rgb(27, 27, 27);
-  text-transform: uppercase;
-  letter-spacing: 0.107em;
-  overflow-wrap: break-word;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .faqMobileHeaderTextActive {
   color: rgb(140, 111, 111);
 }
 
-.faqMobileDrawerText {
-  font-size: inherit;
-  line-height: 1.5;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.faqDrawerHr {
+.accordion--horizontal-line {
   border-color: rgb(226, 226, 226);
   border-bottom-width: 1px;
   border-style: solid;

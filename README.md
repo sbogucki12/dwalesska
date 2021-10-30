@@ -4,9 +4,11 @@
 
 _Developing a coaching site for a client_
 
-## Oct 22, 2021: 
+## Oct 29, 2021
 
-<p>Building an accordian for the mobile FAQs</p>
+<p>Building out an Accordion component.</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/accordionGif0.gif" />
 
 ## Oct 19, 2021
 
