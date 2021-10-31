@@ -29,16 +29,14 @@ const FaqMobileMain = () => {
         <div>
           <hr />
         </div>{" "}
-        <div>Frequently Asked Questions</div>
+        <div>{languageText.FREQUENTLYASKEDQUESTIONS}</div>
         <div>
           <hr />
         </div>
       </div>
       <div>
         <div>
-          <p>
-            Please contact us if you cannot find an answer to your question.
-          </p>
+          <div>{languageText.FAQHEADERCAPTION}</div>
         </div>
       </div>
       <div>

@@ -77,8 +77,37 @@
   height: 80vh;
 }
 
-.faqContainer {
-  min-height: 60vh;
+.faqDesktop {
+  margin-bottom: 5%;
+}
+
+.faqDesktop--header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.faqDesktop--header--horizontal-line {
+  width: 30%;
+}
+
+.faqDesktop--header--text {
+  padding: 5px;
+  max-width: 80%;
+  text-transform: unset;
+  letter-spacing: unset;
+  font-size: 41px;
+  font-family: Sacramento, serif, system-ui;
+  display: inline-block;
+  color: inherit;
+  position: relative;
+  box-sizing: inherit;
+}
+
+.faqDesktop--header--caption {
+  padding: 5px;
 }
 
 .reviewsTitleText {

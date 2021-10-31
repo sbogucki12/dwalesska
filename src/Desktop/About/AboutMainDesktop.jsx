@@ -4,14 +4,33 @@ import ChatBoxFAB from "../ChatBox/ChatBoxFAB";
 import reviewsBackground from "./reviewsBackground.webp";
 import { useLanguageContext } from "../../utils/LanguageProvider";
 import FooterDesktop from "../Footer/FooterDesktop";
+import FaqMobileAccordion from "../../Mobile/FaqMobile/FaqMobileAccordion";
 
 const AboutMainDesktop = () => {
   const languageText = useLanguageContext();
 
+  const faqContent = [
+    {
+      id: 0,
+      header: languageText.FAQ0HEADER,
+      text: languageText.FAQ0TEXT,
+    },
+    {
+      id: 1,
+      header: languageText.FAQ1HEADER,
+      text: languageText.FAQ0TEXT,
+    },
+    {
+      id: 2,
+      header: languageText.FAQ2HEADER,
+      text: languageText.FAQ0TEXT,
+    },
+  ];
+
   return (
     <div>
       <HeaderDesktop />
-      <div className="aboutContainer">        
+      <div className="aboutContainer">
         <div className="aboutMainContainer">
           <div className="aboutMainLeft">
             <div className="aboutMeBorder">
@@ -42,7 +61,25 @@ const AboutMainDesktop = () => {
             </div>
           </div>
         </div>
-        <div className="faqContainer">{languageText.FAQ}</div>
+        <div className="faqDesktop">
+          <div className="faqDesktop--header">
+            <div className="faqDesktop--header--horizontal-line">
+              <hr />
+            </div>
+            <div className="faqDesktop--header--text">
+              {languageText.FREQUENTLYASKEDQUESTIONS}
+            </div>
+            <div className="faqDesktop--header--horizontal-line">
+              <hr />
+            </div>
+          </div>
+          <div className="faqDesktop--header--caption">
+            {languageText.FAQHEADERCAPTION}
+          </div>
+          <div>
+            <FaqMobileAccordion faqContent={faqContent} />
+          </div>
+        </div>
         <div
           title="Dania Coaching Reviews"
           alt="Dania Coaching Reviews"
@@ -60,7 +97,9 @@ const AboutMainDesktop = () => {
             <h1 className="reviewsTitleText">{languageText.REVIEWS}</h1>
           </div>
         </div>
-        <div><FooterDesktop /></div>
+        <div>
+          <FooterDesktop />
+        </div>
         <div>
           <ChatBoxFAB />
         </div>

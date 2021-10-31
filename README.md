@@ -4,6 +4,12 @@
 
 _Developing a coaching site for a client_
 
+## Oct 30, 2021
+
+<p>Added the FAQ Accordion to the desktop view.</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/aboutMe1GIF.gif" />
+
 ## Oct 29, 2021
 
 <p>Building out an Accordion component.</p>
