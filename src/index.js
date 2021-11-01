@@ -4,13 +4,20 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
-import './utils/fonts/BrittanySignature.ttf';
+import "./utils/fonts/BrittanySignature.ttf";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import data from "./utils/ignoreFromGit.json";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <GoogleReCaptchaProvider
+      reCaptchaKey={data.recaptcha.key}
+      //language="es"
+    >
+      <Router>
+        <App />
+      </Router>
+    </GoogleReCaptchaProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
