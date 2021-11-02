@@ -11,7 +11,6 @@ const ChatBoxFormContent = (props) => {
   const languageText = useLanguageContext();
   const [isCaptchaValid, setCaptchaValid] = useState(false);
   const key = data.recaptcha.key;
-  
 
   const { executeRecaptcha } = useGoogleReCaptcha();
 
@@ -23,12 +22,17 @@ const ChatBoxFormContent = (props) => {
     }
 
     const token = await executeRecaptcha();
-    console.log(token.length)
-    if(token.length > 400){
-      setCaptchaValid(true);
-      return;
-    }
-   
+    
+    const result = await fetch(`https://localhost:44308/api/verify?token=${token}`, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'        
+      }
+    }).then((response) => response.json());
+
+    console.log(result);
+    return result; 
+
   }, [executeRecaptcha]);
 
   // You can use useEffect to trigger the verification as soon as the component being loaded

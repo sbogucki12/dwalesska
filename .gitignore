@@ -22,5 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-.ignoreFromGit.json
-.ignoreFromGit
+ignoreFromGit.json
+ignoreFromGit
