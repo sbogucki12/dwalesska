@@ -24,3 +24,5 @@ yarn-error.log*
 
 ignoreFromGit.json
 ignoreFromGit
+.ignoreFromGit.json
+.ignoreFromGit

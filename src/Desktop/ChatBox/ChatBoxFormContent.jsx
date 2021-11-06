@@ -22,17 +22,41 @@ const ChatBoxFormContent = (props) => {
     }
 
     const token = await executeRecaptcha();
-    
-    const result = await fetch(`https://localhost:44308/api/verify?token=${token}`, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'        
+
+    const result = await fetch(
+      `https://localhost:44308/api/verify?token=${token}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
       }
-    }).then((response) => response.json());
+    )
+      .then((response) => {
+        if (response.status >= 400 && response.status < 600) {
+          throw new Error("Bad response from server");
+        }
+        setCaptchaValid(true);
 
-    console.log(result);
-    return result; 
-
+        return response;
+      })
+      .then((returnedResponse) => returnedResponse.json())
+      .then((json) => {
+        if (json.success !== true) {
+          console.log("Recaptcha error: " + json["error-codes"][0]);
+        }
+        if (json.score >= 0.9) {
+          setCaptchaValid(true);
+        } else {
+          setCaptchaValid(false);
+          return;
+        }
+      })
+      .catch((error) => {
+        // Your error is here!
+        console.log(`Recaptcha error: ${error}`);
+        return;
+      });
   }, [executeRecaptcha]);
 
   // You can use useEffect to trigger the verification as soon as the component being loaded
@@ -75,7 +99,7 @@ const ChatBoxFormContent = (props) => {
                   {props.chatboxButtonLabel}
                 </button>
               ) : (
-                <div>Verify Recaptcha</div>
+                <div>Are you a 🤖?</div>
               )}
             </GoogleReCaptchaProvider>
           </center>
