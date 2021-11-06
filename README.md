@@ -1,6 +1,6 @@
 # DWalesska.com
 
-[Dwalesska.com](https://icy-mud-0b507341e.azurestaticapps.net/)
+[Dwalesska.com](http://dwalesska.azurewebsites.net/)
 
 _Developing a coaching site for a client_
 
