@@ -4,6 +4,12 @@
 
 _Developing a coaching site for a client_
 
+## Nov 11. 2021
+
+<p>Fetch POST request to the SendGrid client I built in another repo (.NET 5, Azure) to implement comment functionality:</p>
+
+<img src="https://raw.githubusercontent.com/sbogucki12/dwalesska/main/readmeFiles/commentForm0GIF.gif" />
+
 ## Oct 30, 2021
 
 <p>Added the FAQ Accordion to the desktop view.</p>

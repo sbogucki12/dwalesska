@@ -6,6 +6,8 @@ import {
 } from "react-google-recaptcha-v3";
 import { useCallback, useEffect, useState } from "react";
 import data from "../../utils/ignoreFromGit.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const ChatBoxFormContent = (props) => {
   const languageText = useLanguageContext();
@@ -22,16 +24,16 @@ const ChatBoxFormContent = (props) => {
     }
 
     const token = await executeRecaptcha();
+    const googleUrlProd =
+      "http://dwalesskaapi.azurewebsites.net/api/verify?token=";
+    const googleUrlDev = "https://localhost:44308/api/verify?token=";
 
-    const result = await fetch(
-      `https://localhost:44308/api/verify?token=${token}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    )
+    const result = await fetch(`${googleUrlProd}${token}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
       .then((response) => {
         if (response.status >= 400 && response.status < 600) {
           throw new Error("Bad response from server");
@@ -53,13 +55,12 @@ const ChatBoxFormContent = (props) => {
         }
       })
       .catch((error) => {
-        // Your error is here!
         console.log(`Recaptcha error: ${error}`);
         return;
       });
   }, [executeRecaptcha]);
 
-  // You can use useEffect to trigger the verification as soon as the component being loaded
+  //useEffect to trigger the verification as soon as the component loads
   useEffect(() => {
     handleReCaptchaVerify();
   }, [handleReCaptchaVerify]);
@@ -73,19 +74,28 @@ const ChatBoxFormContent = (props) => {
         <div className="chatBoxFormContainer">
           <input
             type="text"
+            name="name"
             placeholder={languageText.NAME}
             className="chatBoxInput"
+            value={props.formData.name}
+            onChange={props.handleInputChange}
           />
           <input
             type="text"
+            name="email"
             placeholder={languageText.EMAIL}
             className="chatBoxInput"
+            value={props.formData.email}
+            onChange={props.handleInputChange}
           />
           <textarea
             rows="4"
             cols="35"
+            name="comment"
             placeholder={languageText.HOWCANWEHELP}
             className="chatBoxTextArea"
+            value={props.formData.comment}
+            onChange={props.handleInputChange}
           />
         </div>
         <div style={{ marginTop: "5px" }}>
@@ -99,7 +109,29 @@ const ChatBoxFormContent = (props) => {
                   {props.chatboxButtonLabel}
                 </button>
               ) : (
-                <div>Are you a 🤖?</div>
+                <div>
+                  <p>
+                    We detect a{" "}
+                    <span title="bot" alt="bot">
+                      🤖
+                    </span>
+                  </p>
+                  <p>
+                    Try{" "}
+                    <a
+                      href="https://www.instagram.com/dwalesska_coaching/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      style={{ color: "red" }}
+                    >
+                      <FontAwesomeIcon
+                        icon={faInstagram}
+                        title="Instagram"
+                        alt="Instagram"
+                      />
+                    </a>
+                  </p>
+                </div>
               )}
             </GoogleReCaptchaProvider>
           </center>
